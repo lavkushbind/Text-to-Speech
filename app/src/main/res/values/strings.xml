@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Text To Speech</string>
+    <string-array name="languages">
+        <item>Hindi</item>
+
+        <item>English</item>
+        <item>Spanish</item>
+        <item>German</item>
+        <item>Italian</item>
+        <item>Portuguese</item>
+        <item>Russian</item>
+        <item>Chinese (Simplified)</item>
+        <item>Japanese</item>
+        <item>Korean</item>
+        <item>Arabic</item>
+        <item>Turkish</item>
+        <item>Dutch</item>
+        <item>Swedish</item>
+        <item>Norwegian</item>
+        <item>Danish</item>
+        <item>Finnish</item>
+        <item>Greek</item>
+        <item>Hebrew</item>
+        <item>French</item>
+
+        <!-- Add more languages as needed -->
+    </string-array>
+    <string name="select_language">Select Language</string>
+</resources>

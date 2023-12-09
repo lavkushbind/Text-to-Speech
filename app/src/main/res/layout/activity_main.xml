@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CAD0F4"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#E9EBF7"
+            android:hint="Enter text"
+            android:inputType="textMultiLine"
+            android:minHeight="50dp"
+            android:padding="10dp"
+            android:text="Text to speech"
+            android:textColor="#1D004F"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#E9EBF7"
+            android:padding="10dp"
+            android:minHeight="400dp"
+            android:gravity="top"
+            android:background="@drawable/shape"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="16dp"
+            android:hint="Enter text"/>
+        <Spinner
+            android:id="@+id/languageSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:entries="@array/languages"
+            android:prompt="@string/select_language"/>
+
+        <Button
+            android:id="@+id/speedUpButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/languageSpinner"
+            android:layout_marginTop="8dp"
+
+            android:text="Speed Up"
+            android:layout_marginRight="8dp"/>
+
+        <Button
+            android:id="@+id/speedDownButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+
+            android:layout_below="@id/languageSpinner"
+            android:layout_toRightOf="@id/speedUpButton"
+            android:text="Speed Down"/>
+
+        <Button
+            android:id="@+id/convertButton"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:text="Convert to Speech"
+
+            android:textColor="#FFFFFF"/>
+
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:max="100"
+            android:visibility="gone" />
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
